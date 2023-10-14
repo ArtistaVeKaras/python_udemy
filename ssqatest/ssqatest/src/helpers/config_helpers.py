@@ -6,7 +6,7 @@ def get_base_url():
 
     if env.lower() == 'test':
         return 'http://demmostore.supersqa.com'
-    elif env.lower() == 'prod':
+    elif env.lower() == 'production':
         return 'http://demmostore.prod.supersqa.com'
     else:
         raise Exception('Unknown environment: %s' % env)

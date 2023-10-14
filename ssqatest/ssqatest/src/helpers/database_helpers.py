@@ -2,6 +2,7 @@ import pymysql
 from ssqatest.src.helpers.config_helpers import get_database_credentials
 from ssqatest.src.configs.generic_configs import GenericConfig
 
+# this function will only read from the database
 def read_from_db(sql):
    
     db_cred = get_database_credentials() 
@@ -51,3 +52,8 @@ def get_order_from_db_by_order_no_dabase_schema(order_no):
 # only needed if you running from from the terminal and wan to test the code
 get_order_from_db_by_order_no(1)
 get_order_from_db_by_order_no_dabase_schema(1)
+
+
+# this function will right into the database
+def right_to_db(self, sql_1):
+    pass
